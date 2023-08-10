@@ -1,4 +1,6 @@
+## About
 
+This is a small personal blog project.
 
 
 ## Acknowledgment
