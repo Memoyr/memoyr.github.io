@@ -25,7 +25,7 @@ concurrency:
   cancel-in-progress: false
 
 env:
-  BUILD_PATH: "./faithful-force" # using subfolders
+  BUILD_PATH: "." # 
   # BUILD_PATH: subfolder
 
 jobs:
