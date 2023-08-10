@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://mdev.ninja/sitemap-index.xml
