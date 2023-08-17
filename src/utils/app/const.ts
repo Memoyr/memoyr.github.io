@@ -1,0 +1,1 @@
+export const skillsTags = ['TypeScript', 'JavaScript', 'Python', 'CSS', 'SASS', 'Angular', 'React', 'RxJS', 'NgRx', 'Docker', 'Pandas', 'PyTorch', 'Git', 'Agile']

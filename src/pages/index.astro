@@ -3,7 +3,7 @@ import { getCollection } from "astro:content";
 import PageLayout from "@/layouts/Base";
 import PostPreview from "@/components/blog/PostPreview";
 import SocialList from "@/components/SocialList";
-import { sortMDByDate } from "@/utils";
+import { sortMDByDate, skillsTags } from "@/utils";
 
 const MAX_POSTS = 10;
 const allPosts = await getCollection("post");
@@ -49,26 +49,29 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 ---
 
 <PageLayout meta={{ title: "Home" }}>
-	<section>
-		<p class="mb-4 text-lg sm:text-lg">Welcome 👋</p>
-	</section>
-	<section aria-label="Blog post list" class="mt-16">
-		<h2 class="title mb-4 text-xl">Posts</h2>
-		<ul class="space-y-4 sm:space-y-2">
-			{
-				allPostsByDate.map((p) => (
-					<li class="flex flex-col gap-x-2 sm:flex-row">
-						<PostPreview post={p} />
-					</li>
-				))
-			}
-		</ul>
-	</section>
-	<section class="mt-16">
-		<h2 class="title mb-4 text-xl">Get in touch</h2>
-		<SocialList />
-	</section>
-	<!-- 	<section class="mt-16">
+	<div class="grid gap-y-16 sm:grid-cols-[3fr_1fr] sm:gap-x-8">
+		<div>
+			<section>
+				<p class="mb-4 text-lg sm:text-lg">Welcome 👋</p>
+				<p class="mb-4 text-base sm:text-base">My name is Myriam and I am a software developer.</p>
+			</section>
+			<section aria-label="Blog post list" class="mt-16">
+				<h2 class="title mb-4 text-xl">Posts</h2>
+				<ul class="space-y-4 sm:space-y-2">
+					{
+						allPostsByDate.map((p) => (
+							<li class="flex flex-col gap-x-2 sm:flex-row">
+								<PostPreview post={p} />
+							</li>
+						))
+					}
+				</ul>
+			</section>
+			<section class="mt-16">
+				<h2 class="title mb-4 text-xl">Get in touch</h2>
+				<SocialList />
+			</section>
+			<!-- 	<section class="mt-16">
 		<h2 class="title mb-4 text-xl">Technologies</h2>
 		<ul class="space-y-4 sm:space-y-2">
 			{
@@ -88,4 +91,26 @@ const allPostsByDate = sortMDByDate(allPosts).slice(0, MAX_POSTS);
 			}
 		</ul>
 	</section> -->
+		</div>
+		<div>
+			<section class="mt-2">
+				{
+					skillsTags.length && (
+						<>
+							<h2 class="mb-4 flex items-center text-lg font-semibold">Skills</h2>
+							<ul class="flex flex-wrap gap-2 text-bgColor">
+								{skillsTags.map((tag) => (
+									<li>
+										<span class="flex items-center justify-center rounded-lg bg-accent p-1">
+											{tag}
+										</span>
+									</li>
+								))}
+							</ul>
+						</>
+					)
+				}
+			</section>
+		</div>
+	</div>
 </PageLayout>

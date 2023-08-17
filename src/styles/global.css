@@ -44,8 +44,13 @@ html.dark .logo {
 	clip-path: circle(50%);
 }
 
+.prose {
+	max-width: 90ch;
+}
+
 @layer base {
 	html body {
 		font-family: Arial, system-ui, sans-serif;
+		max-width: 62rem;
 	}
 }
