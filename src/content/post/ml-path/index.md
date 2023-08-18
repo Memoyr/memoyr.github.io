@@ -1,5 +1,5 @@
 ---
-title: "I've utilized LangChain to generate career path advice."
+title: "I've used LangChain to generate career path advice."
 description: "In this concise notebook, I have leveraged LangChain's automation to generate career path suggestions."
 publishDate: "18 August 2023"
 tags: ["LangChain", "GPT4", "Career", "Notebook"]
