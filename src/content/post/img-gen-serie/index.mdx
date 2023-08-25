@@ -1,0 +1,56 @@
+---
+title: "Generative images same prompt serie"
+description: "I made a series of image generation with the same prompt on different models."
+publishDate: "18 August 2023"
+tags: ["ai", "generative images"]
+---
+
+import { Image } from "astro:assets";
+import aboutImg from "~/assets/avatar.png";
+import Search from "../../../components/Search.astro";
+import ImageGrid from "../../../components/ImageGrid.astro";
+import Imgs from "../../../components/Imgs.astro";
+
+## Multiple models similar prompt
+
+<Imgs
+	imageList={[
+		{ url: "/src/assets/img-serie-1/1.png", alt: "Cat 2" },
+		{ url: "/src/assets/img-serie-1/2.png", alt: "Cat 2" },
+		{ url: "/src/assets/img-serie-1/3.png", alt: "Cat 2" },
+		{ url: "/src/assets/img-serie-1/4.png", alt: "Cat 2" },
+		{ url: "/src/assets/img-serie-1/5.png", alt: "Cat 2" },
+		{ url: "/src/assets/img-serie-1/6.png", alt: "Cat 2" },
+		{ url: "/src/assets/img-serie-1/7.png", alt: "Cat 2" },
+		{ url: "/src/assets/img-serie-1/8.png", alt: "Cat 2" },
+
+    ]}
+
+/>
+
+<ImageGrid />
+
+<div class="flex">
+	<div class="h-14 w-14 flex-none">01</div>
+	<div class="w-64 flex-initial">02</div>
+	<div class="w-32 flex-initial">03</div>
+</div>
+
+<div class="flex bg-white p-14">
+	<div class="flex flex-none flex-wrap gap-4">
+		<Image
+			class="flex  min-w-[50%] basis-96 flex-col"
+			src={aboutImg}
+			alt="Avatar logo"
+			loading="eager"
+			fetchpriority="high"
+		/>
+		<Image
+			class="flex min-w-[50%] flex-grow basis-96 flex-col"
+			src={aboutImg}
+			alt="Avatar logo"
+			loading="eager"
+			fetchpriority="high"
+		/>
+	</div>
+</div>

@@ -1,0 +1,26 @@
+---
+import { Image } from "astro:assets";
+
+export interface Props {
+	imageList: [{ url: string; alt: string }];
+}
+
+const { imageList } = Astro.props;
+---
+
+<section>
+	<p>Images Component</p>
+	{
+		imageList.map((photo, index) => (
+			<div>
+				<p>{photo.url}</p>
+				<Image src={photo.url} width="768" height="439" alt={photo.alt} />
+			</div>
+		))
+	}
+</section>
+<style>
+	section {
+		background-color: #9acdcd;
+	}
+</style>
