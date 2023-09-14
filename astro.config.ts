@@ -7,6 +7,9 @@ import remarkUnwrapImages from "remark-unwrap-images";
 
 // https://astro.build/config
 export default defineConfig({
+	root: "./",
+	publicDir: "./public",
+	outDir: "./dist",
 	// ! Please remember to replace the following site property with your own domain
 	site: "https://www.mdev.ninja/",
 	markdown: {
