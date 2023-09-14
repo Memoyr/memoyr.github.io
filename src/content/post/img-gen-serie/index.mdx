@@ -1,56 +1,42 @@
 ---
 title: "Generative images same prompt serie"
 description: "I made a series of image generation with the same prompt on different models."
-publishDate: "18 August 2023"
+publishDate: "25 August 2023"
 tags: ["ai", "generative images"]
 ---
 
-import { Image } from "astro:assets";
-import aboutImg from "~/assets/avatar.png";
-import Search from "../../../components/Search.astro";
-import ImageGrid from "../../../components/ImageGrid.astro";
 import Imgs from "../../../components/Imgs.astro";
 
-## Multiple models similar prompt
+## Creation
+
+The scientific process I used for this experiment was not absolute 😎. It consisted of a trial of a few image generation models, mostly using the same prompt with occasional small variations.
+
+Although these new models are great, you may notice some imperfections in certain elements. However, if you overlook that, my thought is that it is mind-blowing, and the potential is obvious.
+
+I have fallen in love with the results, and at one point, it was hard to stop myself from generating new batches. Suddenly, I caught myself behaving like a kid playing video games who cannot leave the console and go to sleep.
+
+More of this will follow, it's official!
+
+## Astro
+
+I am currently learning [Astro](https://astro.build/), the framework I use to build this website.
+It took a bit of time to understand how to create the basic Image Gallery that is visible on this page, and I hope to enhance this component as I progress.
+
+Given my familiarity with Angular and Next.js (React), it does require some amount of time and effort to comprehend the fundamental of workings of Astro.
+Nevertheless, I am thoroughly enjoying working with it, and I find the ability to use `.mdx and .md` files to be fast and convenient for my specific needs.
+
+## The results
 
 <Imgs
 	imageList={[
-		{ url: "/src/assets/img-serie-1/1.png", alt: "Cat 2" },
-		{ url: "/src/assets/img-serie-1/2.png", alt: "Cat 2" },
-		{ url: "/src/assets/img-serie-1/3.png", alt: "Cat 2" },
-		{ url: "/src/assets/img-serie-1/4.png", alt: "Cat 2" },
-		{ url: "/src/assets/img-serie-1/5.png", alt: "Cat 2" },
-		{ url: "/src/assets/img-serie-1/6.png", alt: "Cat 2" },
-		{ url: "/src/assets/img-serie-1/7.png", alt: "Cat 2" },
-		{ url: "/src/assets/img-serie-1/8.png", alt: "Cat 2" },
-
+		{ url: "/src/assets/img-serie-1/1.png", alt: "genration 1" },
+		{ url: "/src/assets/img-serie-1/2.png", alt: "genration 2" },
+		{ url: "/src/assets/img-serie-1/3.png", alt: "genration 3" },
+		{ url: "/src/assets/img-serie-1/4.png", alt: "genration 4" },
+		{ url: "/src/assets/img-serie-1/5.png", alt: "genration 5" },
+		{ url: "/src/assets/img-serie-1/6.png", alt: "genration 6" },
+		{ url: "/src/assets/img-serie-1/7.png", alt: "genration 7" },
+		{ url: "/src/assets/img-serie-1/8.png", alt: "genration 8" },
     ]}
 
 />
-
-<ImageGrid />
-
-<div class="flex">
-	<div class="h-14 w-14 flex-none">01</div>
-	<div class="w-64 flex-initial">02</div>
-	<div class="w-32 flex-initial">03</div>
-</div>
-
-<div class="flex bg-white p-14">
-	<div class="flex flex-none flex-wrap gap-4">
-		<Image
-			class="flex  min-w-[50%] basis-96 flex-col"
-			src={aboutImg}
-			alt="Avatar logo"
-			loading="eager"
-			fetchpriority="high"
-		/>
-		<Image
-			class="flex min-w-[50%] flex-grow basis-96 flex-col"
-			src={aboutImg}
-			alt="Avatar logo"
-			loading="eager"
-			fetchpriority="high"
-		/>
-	</div>
-</div>

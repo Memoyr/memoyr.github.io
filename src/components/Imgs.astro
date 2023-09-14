@@ -9,18 +9,16 @@ const { imageList } = Astro.props;
 ---
 
 <section>
-	<p>Images Component</p>
-	{
-		imageList.map((photo, index) => (
-			<div>
-				<p>{photo.url}</p>
-				<Image src={photo.url} width="768" height="439" alt={photo.alt} />
-			</div>
-		))
-	}
+	<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+		{
+			imageList.map((photo, index) => (
+				<Image class="mb-0 mt-0" src={photo.url} width="768" height="439" alt={photo.alt} />
+			))
+		}
+	</div>
 </section>
 <style>
 	section {
-		background-color: #9acdcd;
+		background-color: transparent;
 	}
 </style>
