@@ -1,38 +1,31 @@
 ---
 import PageLayout from "@/layouts/Base";
-import { Image } from "astro:assets";
-import aboutImg from "~/assets/about-astro.png";
 
 const meta = {
 	title: "About",
-	description: "I'm a starter theme for Astro.build",
+	description: "What's about this website",
 };
 ---
 
 <PageLayout meta={meta}>
 	<div class="space-y-6">
 		<h1 class="title">About</h1>
-		<p>
-			<span class="font-bold">[WIP - comming soon]</span> Ok, I know. I need to ask some GPT help for
-			copy on this about page.
+		<p class="mb-4 text-base sm:text-base">
+			My name is Myriam. I'm a software developer. I work in the domain for the past 15 years or so,
+			as a front-end developer, for the most part. <br />
+			Fun fact: I have never published a blog post! So, why now ? Well, I felt it's time, and, I'm working
+			on adding a new branch to my knowledge of computer science: machine learning. I have to say, it's
+			a deeply dense subject! It needs a lot of solutions to maximise memory retention and so posting
+			to a blog is one. 🤟
 		</p>
-		<!-- 		<div class="flex justify-center">
-			<Image
-				src={aboutImg}
-				alt="A cartoon cactus looking at the 'Astro.build' logo"
-				loading="eager"
-				fetchpriority="high"
-			/>
-		</div> -->
-		<!-- 		<p>Here are my some of my awesome skills and knowledge:</p>
-		<ul class="list-inside list-disc">
-			<li>I'm ultra fast as I'm a static site</li>
-			<li>I'm fully responsive</li>
-			<li>I come with a light and dark mode</li>
-			<li>I'm easy to customise and add additional content</li>
-			<li>I have Tailwind CSS styling</li>
-			<li>Shiki code syntax highlighting</li>
-			<li>Satori for auto generating OG images for blog posts</li>
-		</ul> -->
+		<p class="mb-4 text-base sm:text-base">
+			As I learn, I also gain meta-knowledge, apart of the technical ones, some of them are: how to
+			take better notes, new methods for increasing my own capacity for memorisation and finally
+			communicate & share my knowledge.
+		</p>
+		<p class="mb-4 text-base sm:text-base">
+			This space will contain some of the latest interesting subjects my studies covers and will
+			certainly evolve. I hope you enjoy!
+		</p>
 	</div>
 </PageLayout>

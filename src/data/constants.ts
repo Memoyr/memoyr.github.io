@@ -18,5 +18,5 @@ export const SOCIAL_LINKS = {
 	github: "https://github.com/memoyr",
 	twitter: "https://",
 	discord: "https://",
-	email: "@",
+	email: "mdevmyriam@proton.me",
 };
