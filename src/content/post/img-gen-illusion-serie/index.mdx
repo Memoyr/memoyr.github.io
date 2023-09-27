@@ -1,0 +1,33 @@
+---
+title: "AI, QR Codes & art"
+description: "Generating illusion images with controlNet stablediffusion model."
+publishDate: "26 Septembre 2023"
+tags: ["ai", "generative images"]
+---
+
+import Imgs from "../../../components/Imgs.astro";
+
+## Exploration
+
+This [model](https://github.com/andreasjansson/cog-qrcode/tree/main) deliver interesting results and I wanted to give a few tries.
+It's primarily designed to generate creative QR codes, but it can also be used to render illusions. The model in question is a [Stable Diffusion](https://github.com/Stability-AI/stablediffusion) model integrated with [ControlNet](https://github.com/lllyasviel/ControlNet), a neural network structure to control diffusion models by adding extra conditions, for example an image input.
+
+I used my avatar image (as displayed in the header) to test it out. The initial step in my process involved generating a simpler (sort of black and white) render of the picture. Subsequently, this render was used as the input for the image parameter.
+I deep dive into ControlNet & Stable Diffusion sounds like an interesting idea for a next project.
+
+## First step - Image input
+
+<Imgs colnb={1} imageList={[{ url: "../../img-serie-2/00.png", alt: "genration 0" }]} />
+
+## Results
+
+<Imgs
+colnb={1}
+	imageList={[
+    	{ url: "../../img-serie-2/1.png", alt: "genration 1" },
+    	{ url: "../../img-serie-2/7.png", alt: "genration 7" },
+    	{ url: "../../img-serie-2/5.png", alt: "genration 5" },
+		{ url: "../../img-serie-2/2.png", alt: "genration 2" },
+    ]}
+
+/>
