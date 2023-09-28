@@ -7,7 +7,7 @@ tags: ["Front-end", "Text-to-speech API", "React", "Tailwind", "Google cloud con
 
 # React
 
-I've been creating applications using Angular quite a few years now, so I thought it was the right moment to get back on a React project. My last professional project with React was over five years ago, so I wanted also to familiarize myself with the current state of the library. I had heard about hooks, functional components, and more, but hadn't gotten a chance to use them.
+I've been creating applications using Angular for quite a few years now, so I thought it was the right moment to get back on a React project. My last professional project with React was over five years ago, so I wanted also to familiarize myself with the current state of the library. I had heard about hooks, functional components, and more, but hadn't gotten a chance to use them.
 
 Lately, I've been reading a lot of text content online. This experience sparked the idea for the project, leading me to build a tool that would enable me to read for extended periods. I have additional ideas for expanding this app, but since the main objective has been met, I might regard this as a Minimum Viable Product (MVP).
 
