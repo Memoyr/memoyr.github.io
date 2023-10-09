@@ -28,6 +28,6 @@ I wish there's more than 24h in a day! I love what I do and I continue to progre
 
 ![Kaggle course Pandas](./kaggle-MindGspl-Pandas.png)
 
-![Kaggle course Intro to Machine Learning](./kaggle-MindGspl-Intro-to-Machine-Learning.png)
+![Kaggle course Intro to Machine Learning](./kaggle-MindGspl-Intro-to-Machine-Learning-n.png)
 
 ![Kaggle course Intermediate Machine Learning](./kaggle-MindGspl-Intermediate-Machine-Learning.png)
