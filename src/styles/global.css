@@ -35,7 +35,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 html.dark .logo {
 	fill: white;
 }
