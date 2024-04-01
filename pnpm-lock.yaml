@@ -92,8 +92,8 @@ devDependencies:
     specifier: ^8.4.24
     version: 8.4.24
   postcss-html:
-    specifier: ^1.5.0
-    version: 1.5.0
+    specifier: ^1.6.0
+    version: 1.6.0
   prettier:
     specifier: ^3.0.1
     version: 3.0.1
@@ -4628,14 +4628,14 @@ packages:
     dependencies:
       find-up: 4.1.0
 
-  /postcss-html@1.5.0:
-    resolution: {integrity: sha512-kCMRWJRHKicpA166kc2lAVUGxDZL324bkj/pVOb6RhjB0Z5Krl7mN0AsVkBhVIRZZirY0lyQXG38HCVaoKVNoA==}
+  /postcss-html@1.6.0:
+    resolution: {integrity: sha512-OWgQ9/Pe23MnNJC0PL4uZp8k0EDaUvqpJFSiwFxOLClAhmD7UEisyhO3x5hVsD4xFrjReVTXydlrMes45dJ71w==}
     engines: {node: ^12 || >=14}
     dependencies:
       htmlparser2: 8.0.1
       js-tokens: 8.0.1
-      postcss: 8.4.24
-      postcss-safe-parser: 6.0.0(postcss@8.4.24)
+      postcss: 8.4.29
+      postcss-safe-parser: 6.0.0(postcss@8.4.29)
     dev: true
 
   /postcss-import@15.1.0(postcss@8.4.24):
@@ -4687,13 +4687,13 @@ packages:
       postcss-selector-parser: 6.0.13
     dev: true
 
-  /postcss-safe-parser@6.0.0(postcss@8.4.24):
+  /postcss-safe-parser@6.0.0(postcss@8.4.29):
     resolution: {integrity: sha512-FARHN8pwH+WiS2OPCxJI8FuRJpTVnn6ZNFiqAM2aeW2LwTHWWmWgIyKC6cUo0L8aeKiF/14MNvnpls6R2PBeMQ==}
     engines: {node: '>=12.0'}
     peerDependencies:
       postcss: ^8.3.3
     dependencies:
-      postcss: 8.4.24
+      postcss: 8.4.29
     dev: true
 
   /postcss-selector-parser@6.0.10:
